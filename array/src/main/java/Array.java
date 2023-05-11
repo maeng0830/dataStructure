@@ -32,13 +32,21 @@ public class Array {
 			con += ints[i].length;
 			System.out.println(Arrays.toString(ints[i]));
 		}
+//		[1, 2, 3]
+//		[4, 5, 6]
+//		[7, 8, 9]
 
 		con = 1;
 		for (int i = 0; i < longs.length; i++) {
 			for (int j = 0; j < longs[i].length; j++) {
 				longs[i][j] = con + j;
 			}
+			con += longs[i].length;
+			System.out.println(Arrays.toString(longs[i]));
 		}
+//		[1, 2, 3]
+//		[4, 5]
+//		[6]
 
 //		=====================행렬로 2차원 배열 이해하기==========================
 		// 모든 내부 배열의 길이가 같은 2차원 배열은 사각형의 행렬로 이해할 수 있다.
